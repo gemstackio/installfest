@@ -203,7 +203,7 @@ $ yes
 1. In order to do this complete all sections with in `GitHub SSH Keys` for each GitHub account you need to work with
 2. Open your `.zshrc` file
 ```sh
-code .zshrc
+code ~/.zshrc
 ```
 3. Create the following alais:
 ```sh
