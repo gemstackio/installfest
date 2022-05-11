@@ -1,5 +1,5 @@
 ![GemStack Logo](./assets/01-b-primary-logo-horizontal.png)
-# Install-Fest
+# Installfest
 
 ## Google Calendar
 1. Go to [Google Calendar](https://calendar.google.com/)
