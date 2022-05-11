@@ -19,11 +19,11 @@
 ## Mac Developer Tools
 1. Opening the Terminal
 2. Type `git`
-![1-mac-developer-tools-git-prompt](./assets/mac-developer-tools/1-mac-developer-tools-git-prompt)
+![1-mac-developer-tools-git-prompt](./assets/mac-developer-tools/1-mac-developer-tools-git-prompt.png)
 3. When prompted click `install` 
-![2-install-developer-tools-prompt](./assets/mac-developer-tools/2-install-developer-tools-prompt)
+![2-install-developer-tools-prompt](./assets/mac-developer-tools/2-install-developer-tools-prompt.png)
 4. Accept License Agreement
-![3-accept-license-agreement](./assets/mac-developer-tools/3-accept-license-agreement)
+![3-accept-license-agreement](./assets/mac-developer-tools/3-accept-license-agreement.png)
 
 > This install can take anywhere between 10-60 mins
 
