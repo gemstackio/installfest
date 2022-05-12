@@ -10,17 +10,17 @@
 6. Click `Create`
 
 ## VS Code
-1. Go to [Visual Studio Code](https://code.visualstudio.com/download) site and download the required installer for your OS
-2. Once VS Code is installed open the program
+1. Go to the [Visual Studio Code](https://code.visualstudio.com/download) site and download the required installer for your OS
+2. Once VS Code is installed, open the program
 3. Press `command + shift + p` to open the command pallet
 4. Type in `Shell Command: Install 'code' command in PATH` and click the option that appears
-    * This will allow you to use the `code` command in the terminal
+    * Installing the `code` command in PATH allows you to use it in the terminal
 
 ## Mac Developer Tools
 1. Opening the Terminal
 2. Type `git`
 ![1-mac-developer-tools-git-prompt](./assets/mac-developer-tools/1-mac-developer-tools-git-prompt.png)
-3. When prompted click `install` 
+3. When prompted click `install`
 ![2-install-developer-tools-prompt](./assets/mac-developer-tools/2-install-developer-tools-prompt.png)
 4. Accept License Agreement
 ![3-accept-license-agreement](./assets/mac-developer-tools/3-accept-license-agreement.png)
@@ -57,7 +57,7 @@ chsh -s /bin/zsh
 ### Install Antigen
 [Antigen](https://github.com/zsh-users/antigen#------antigen-v2) is a plugin manager for zsh.
 
-1. In your root (~) directory create a new hidden directory called `.antigen`:
+1. In your root (~) directory, create a new hidden directory called `.antigen`:
 ```sh
 cd ~; mkdir .antigen; cd .antigen
 ```
@@ -67,7 +67,7 @@ curl -L git.io/antigen > antigen.zsh
 ```
 
 ### Configure Antigen
-Now we will add in some basic configurations that will run every time you open a new terminal window.
+Next, we will add some basic configurations that will run every time you open a new terminal window.
 
 1. Next we will create and configure our `.zshrc` file:
 ```sh
@@ -102,12 +102,12 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 ```
-3. Restart your terminal which should kick off a bunch of application installtions and you will see your teminal change a bit.
+3. Restart your terminal, which should kick off a bunch of application installations, and you will see your terminal change a bit.
 
-Note that we loaded a theme called `robbyrussell` there are many different themes you can test out and install by changing the name provided in line `antigen theme <NAME OF THEME>` in your `.zshrc` file. You can find an expasive list of themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
+Note that we loaded a theme called `robbyrussell` there are many different themes you can test out and install by changing the name provided inline `antigen theme <NAME OF THEME>` in your `.zshrc` file. You can find an expansive list of themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
 ## Install Node
-Now that we have `antigen` installed and configured it is really easy to install `Node.js`.
+Now that we have `antigen` installed and configured, it is straightforward to install `Node.js`.
 
 1. Enter the following command into your terminal:
 ```sh
@@ -122,23 +122,23 @@ node
 ## Expected Output:
 Welcome to Node.js v16.15.0.
 Type ".help" for more information.
-> 
+>
 ```
 ### Changing Node Versions
-Be mindful that the install command in the section above will install the latest version of `Node.js` which might not be what you want. If for some reason you would like to change your the version of `Node` you are running you can use the following command:
+Be mindful that the install command in the section above will install the latest version, which might not be what you want. If, for some reason, you would like to change the version of `Node` you are running, you can use the following command:
 ```sh
 nvm use 0.00.0
 ```
 
 ## GitHub SSH Keys
 ### Generating SSH Keys
-1. Generate a SSH Key:
+1. Generate an SSH Key:
 ```sh
 $ ssh-keygen -t -C "your_name@email.com"
 
 ssh-keygen -t -C "mr@rogercampbell.io"
 ```
-2. When prompted provide a location and name for your SSH Key
+2. When prompted, provide a location and name for your SSH Key
 ```sh
 # Prompt Message: Enter file in which to save the key (/Users/rogercampbellii/.ssh/id_ed25519):
 
@@ -178,10 +178,10 @@ pbcopy < ~/.ssh/<Name of Your SSH Key>.pub
 2. Go to [GitHub](https://github.com/)
 3. Click your profile picture on the top right of the page
 4. Click `Settings`
-5. In the `Access` section of the right click `SSH and GPG keys`
+5. In the `Access` section on the right click `SSH and GPG keys`
 6. Click `New SSH key`
 7. Provide a `Title`; could be the name of your computer
-8. Paste in the Key we copied in step 1
+8. Paste the Key we copied in step 1
 9. Click `Add SSH key`
 10. Provide your GitHub Password when prompted
 
@@ -190,7 +190,7 @@ pbcopy < ~/.ssh/<Name of Your SSH Key>.pub
 ```sh
 ssh -T git@github.com
 ```
-2. If prompted with the following message enter yes:
+1. If prompted with this message enter yes:
 ```sh
 # Are you sure you want to continue connecting (yes/no/[fingerprint])?
 $ yes
@@ -200,12 +200,12 @@ $ yes
 # Hi <GitHub Username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 ## Configuring Two Sets of SSH Keys
-1. In order to do this complete all sections with in `GitHub SSH Keys` for each GitHub account you need to work with
+1. Before moving on with this section, complete the `GitHub SSH Keys` section for each GitHub account you need to work with.
 2. Open your `.zshrc` file
 ```sh
 code ~/.zshrc
 ```
-3. Create the following alais:
+3. Create the following alias:
 ```sh
 alias sshc="ssh-add -D; ssh-add ~/.ssh/<Name of SSH Key>"
 
@@ -230,7 +230,23 @@ git config --global user.name "mrrogercampbell"
 git config --global user.email "mr@rogercampbell.io"
 
 git config --global user.name "mrrocampbel"
-git config --global user.email "rocampbell@chegg.com" 
+git config --global user.email "rocampbell@chegg.com"
+
+
+## Extra Resources
+### VS Code Extensions
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - Spelling checker for source code
+* [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) - A grammar checking for Visual Studio Code using Grammarly.
+* [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Real-time collaborative development from the comfort of your favorite tools.
+* [Lorem ipsum](https://marketplace.visualstudio.com/items?itemName=Tyriar.lorem-ipsum) - Generates and inserts lorem ipsum text
+* [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - All you need to write Markdown, keyboard shortcuts, table of contents, auto preview and more
+* [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) - Markdown Preview Enhanced ported to vscode
+* [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) - npm support for VS Code created by Microsoft
+* [Profile Switcher](https://marketplace.visualstudio.com/items?itemName=aaronpowell.vscode-profile-switcher) - Allows you to switch between different profiles you have created
+* [React.js code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets) - Code snippets for React.js development in ES6 syntax
+* [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
+
+
 
 
 
