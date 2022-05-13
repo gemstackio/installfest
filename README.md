@@ -216,11 +216,20 @@ $ yes
 # Hi <GitHub Username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-## Configure Git User Information
-Set Username:
+## Configure Git Global Settings
+Set Username Information:
 ```sh
 git config --global user.name "GitHub Username"
 git config --global user.email "Email Registered With GitHub"
+```
+
+Set Default Configurations:
+```sh
+# Sets VS Code as default editor for merge conflict messages
+git config --global core.editor 'code --wait'
+
+# Sets 'main' as default branch name on all locally created repos
+git config --global init.defaultBranch main
 ```
 
 Check Global Configurations:
@@ -263,6 +272,11 @@ alias gitconfig="git config --list --global"
 
 
 ## Extra Resources
+### Helpful Desktop Apps
+* [Rectangle App](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
+
+### Chrome Extensions
+* [JSONView](https://jsonview.com/) - Pretty-prints JSON instead of prompting to download it or rendering it as text.
 ### VS Code Extensions
 * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - Spelling checker for source code
 * [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) - A grammar checking for Visual Studio Code using Grammarly.
@@ -281,3 +295,5 @@ alias gitconfig="git config --list --global"
 * [Generating a new SSH key and adding it to the ssh-agent - GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [Multiple SSH Keys settings for different github account](https://gist.github.com/jexchan/2351996) - didn't work
 * [How to install Node.js and NPM with MacOS’s new zsh terminal - AJ Keller](https://medium.com/@andrewjaykeller/how-to-install-node-js-and-npm-with-macoss-new-terminal-zsh-e39b4a62d3d4)
+* [Setting up multiple GitHub accounts, the nicer way](https://dev.to/arnellebalane/setting-up-multiple-github-accounts-the-nicer-way-1m5m) - This guy says he has SSH keys being utilized based on repo file location. I have yet to be able to get his solution working.
+* [SSH Academy - ssh-add program - Usage, ssh-agent, SSH keys](https://www.ssh.com/academy/ssh/add)
