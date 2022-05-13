@@ -216,20 +216,35 @@ $ yes
 # Hi <GitHub Username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+
 ## Configure Git Global Settings
-Set Username Information:
+1. Create a global `.gitignore` file:
+    ```sh
+    touch ~/.gitignore
+    ```
+
+2. Add the .DS_Store to `.gitignore` file:
+    ```sh
+    # Being sure that this pesky file is never added to a repo.
+    echo ".DS_Store" >> .gitignore
+    ```
+
+3. Set User Information:
 ```sh
 git config --global user.name "GitHub Username"
 git config --global user.email "Email Registered With GitHub"
 ```
 
-Set Default Configurations:
+4. Set Default Configurations:
 ```sh
 # Sets VS Code as default editor for merge conflict messages
 git config --global core.editor 'code --wait'
 
 # Sets 'main' as default branch name on all locally created repos
 git config --global init.defaultBranch main
+
+# Registers your global .gitignore
+git config --global core.excludesfile ~/.gitignore
 ```
 
 Check Global Configurations:
