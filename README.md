@@ -1,6 +1,6 @@
 ![GemStack Logo](./assets/01-b-primary-logo-horizontal.png)
 # Installfest
-
+This is a repo is meant to assist you in preparing your Macbook Pro M1 for software development purposes. 
 ## Google Calendar
 1. Go to [Google Calendar](https://calendar.google.com/)
 2. Click the three dots in the top right corner
@@ -130,6 +130,22 @@ Be mindful that the install command in the section above will install the latest
 nvm use 0.00.0
 ```
 
+## Gatsby CLI
+1. Enter the following command:
+```sh
+npm install -g gatsby-cli
+```
+2. Once complete disable Gatsby telemetry:
+```sh
+gatsby telemetry --disable
+```
+
+## Sanity CLI
+1. Enter the following command:
+```sh
+npm install -g @sanity/cli
+```
+
 ## GitHub SSH Keys
 ### Generating SSH Keys
 1. Generate an SSH Key:
@@ -245,9 +261,6 @@ git config --global user.email "rocampbell@chegg.com"
 * [Profile Switcher](https://marketplace.visualstudio.com/items?itemName=aaronpowell.vscode-profile-switcher) - Allows you to switch between different profiles you have created
 * [React.js code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets) - Code snippets for React.js development in ES6 syntax
 * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
-
-
-
 
 
 ## References
