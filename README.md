@@ -215,6 +215,19 @@ $ yes
 # Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
 # Hi <GitHub Username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+## Configure Git User Information
+Set Username:
+```sh
+git config --global user.name "GitHub Username"
+git config --global user.email "Email Registered With GitHub"
+```
+
+Check Global Configurations:
+```sh
+git config --list --global
+```
+
 ## Configuring Two Sets of SSH Keys
 1. Before moving on with this section, complete the `GitHub SSH Keys` section for each GitHub account you need to work with.
 2. Open your `.zshrc` file
@@ -231,22 +244,22 @@ alias <custom-alias-name>=”<command>”
 > You will need to do this for each SSH Key you want to utilize
 ```sh
 # Examples:
-# This removes any existing ssh key from the ssh-agent and adds my work ssh key
-alias sshwork="ssh-add -D; ssh-add ~/.ssh/work"
+# This command does four different things:
+# 1. ssh-add -D; -> Removes any existing ssh key from the ssh-agent
+# 2. ssh-add ~/.ssh/<SSH_KEY_NAME>; -> adds work ssh key to ssh-agent
+# 3. git config --global user.name \"<USERNAME>\"; -> Sets git username for commit messages
+# 4. git config --global user.email \"<E@MAIL.COM>\" -> Sets git email for commit messages
+alias sshwork="ssh-add -D; ssh-add ~/.ssh/<SSH_KEY_NAME>; git config --global user.name \"<USERNAME>\"; git config --global user.email \"<E@MAIL.COM>\""
 
-# This removes any existing ssh key from the ssh-agent and adds my personal ssh key
-alias sshp="ssh-add -D; ssh-add ~/.ssh/personal"
+# Create one for personal also:
+alias sshp="ssh-add -D; ssh-add ~/.ssh/<SSH_KEY_NAME>; git config --global user.name \"<USERNAME>\"; git config --global user.email \"<E@MAIL.COM>\""
 
 # This is list all alias loaded in the ssh-agent
 alias chkssh="ssh-add -l;"
+
+# Prints all git config global settings
+alias gitconfig="git config --list --global"
 ```
-
-## Configure Git
-git config --global user.name "mrrogercampbell"
-git config --global user.email "mr@rogercampbell.io"
-
-git config --global user.name "mrrocampbel"
-git config --global user.email "rocampbell@chegg.com"
 
 
 ## Extra Resources
