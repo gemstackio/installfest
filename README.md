@@ -312,3 +312,4 @@ alias gitconfig="git config --list --global"
 * [How to install Node.js and NPM with MacOS’s new zsh terminal - AJ Keller](https://medium.com/@andrewjaykeller/how-to-install-node-js-and-npm-with-macoss-new-terminal-zsh-e39b4a62d3d4)
 * [Setting up multiple GitHub accounts, the nicer way](https://dev.to/arnellebalane/setting-up-multiple-github-accounts-the-nicer-way-1m5m) - This guy says he has SSH keys being utilized based on repo file location. I have yet to be able to get his solution working.
 * [SSH Academy - ssh-add program - Usage, ssh-agent, SSH keys](https://www.ssh.com/academy/ssh/add)
+* [Global gitignore](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c)
