@@ -114,6 +114,16 @@ Now that we have `antigen` installed and configured, it is straightforward to in
 nvm install --lts
 ```
 
+2. Open your `~./zshrc` file:
+```sh
+code ~./zshrc
+```
+3. Add the following to the top of the `~./zshrc` file:
+```sh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
 ### Check Node Installation
 1. You can check to see if `node` installed properly by running the following command:
 ```sh
